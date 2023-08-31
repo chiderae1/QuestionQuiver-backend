@@ -47,4 +47,4 @@ const Question = new schema(
     },  {timestamps: true}
 )
 
-module.exports = mongoose.model('IleriNode',Question)
+module.exports = mongoose.model('Questions',Question)

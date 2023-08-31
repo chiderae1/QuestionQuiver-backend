@@ -14,11 +14,11 @@ mongoose.connect(process.env.dburl)
         app.listen(process.env.PORT, (err) => 
         {
             if(err){
-                console.log(err)
+                throw Error(err)
             }
         })
     })
-    .catch(err => console.log(err))
+    .catch(err => {throw Error(err)})
 
 // middle ware
 app.use(express.json())

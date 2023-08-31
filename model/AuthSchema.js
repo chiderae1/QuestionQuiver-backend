@@ -132,4 +132,4 @@ Auth.statics.signup = async function (email, password, username) {
     return user
 }
 
-module.exports = mongoose.model('AuthDetails', Auth)
+module.exports = mongoose.model('QuestionQuiverAuth', Auth)
