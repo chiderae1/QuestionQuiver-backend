@@ -21,7 +21,7 @@ const leaderboard = async (req,res) =>
     // get's user score and ExamName from the frontend
     const {user,score,ExamName} = req.body
     
-   console.log(user)
+//    console.log(user)
     try{
         // find the username of the user
         const upload = await Authmodel.findOne({email:user}).select('username')
